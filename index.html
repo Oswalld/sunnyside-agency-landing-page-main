@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <!--FONT-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
 
   <div class="container">
     <header>
 
-      
+
       <div class="header-left">
         <img src="/images/logo.svg" alt="Logo">
       </div>
-      
+
       <div class="header-right">
 
         <nav class="menu-desktop">
@@ -32,27 +36,29 @@
             <li><a href="">Services</a></li>
             <li><a href="">Projects</a></li>
             <li><button><a href="">Contact</a></button></li>
-          </ul>  
+          </ul>
         </nav>
-        
+
         <img class="hamburger" src="/images/icon-hamburger.svg" alt="">
 
       </div>
 
-        <nav class="menu-mobile">
-          <div class="slide-menu">
-            <ul>
-              <li><a href="">About</a></li>
-              <li><a href="">Service</a></li>
-              <li><a href="">Projects</a></li>
-              <li><div class="special"><a href="">Contact</a></div></li>
-            </ul>
-          </div>
-        </nav>
+      <nav class="menu-mobile">
+        <div class="slide-menu">
+          <ul>
+            <li><a href="">About</a></li>
+            <li><a href="">Service</a></li>
+            <li><a href="">Projects</a></li>
+            <li>
+              <div class="special"><a href="">Contact</a></div>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
     </header>
   </div>
-    
+
   <section id="hero">
 
     <h1>We are creatives</h1>
@@ -63,12 +69,12 @@
 
     <div>
       <h2>Transform your brand</h2>
-      
+
       <p>
-        We are a full-service creative agency specializing in helping brands grow fast. 
+        We are a full-service creative agency specializing in helping brands grow fast.
         Engage your clients through compelling visuals that do most of the marketing for you.
       </p>
-      
+
       <button>Learn more</button>
     </div>
 
@@ -81,36 +87,44 @@
 
     <div>
       <h2>Stand out to the right audience</h2>
-      
+
       <p>
-        Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
+        Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll
+        build and extend your brand in digital places.
       </p>
-      
+
       <button>Learn more</button>
     </div>
 
     <img src="/images/mobile/image-stand-out.jpg" alt="">
-    
+
   </section>
 
   <section id="section-three">
+    <div class="card">
 
-    <h3>Graphic design</h3>
-    <p>
-      Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
-    </p> 
+      <h3>Graphic design</h3>
+      <p>
+        Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential
+        clients’ attention.
+      </p>
+      <img src="/images/mobile/image-graphic-design.jpg" alt="">
+    </div>
+    <div class="card">
 
-    <h3>Photography</h3>
-    <p>
-      Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
-    </p>
+      <h3>Photography</h3>
+      <p>
+        Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+      </p>
+      <img src="" alt="">
+    </div>
 
   </section>
 
   <section id="testimonial">
 
     <h4>Client testimonials</h4>
-    
+
     <div class="testi-block">
       <img src="/images/image-emily.jpg" alt="">
       <p>
@@ -124,9 +138,10 @@
     <div class="testi-block">
       <img src="/images/image-thomas.jpg" alt="">
       <p>
-        Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
+        Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and
+        enjoyable experience.
       </p>
-      <div class="testi-name">    Thomas S.      </div>
+      <div class="testi-name"> Thomas S. </div>
       <div class="testi-job"> Chief Operating Officer</div>
 
     </div>
@@ -143,11 +158,17 @@
   </section>
 
 
-  About
-  Services
-  Projects
-  Contact
 
+<footer>
+
+  <img src="/images/logo.svg" alt="">
+
+  <a href="">About</a>
+  <a href="">Services</a>
+  <a href="">Projects</a>
+  
+</footer>
 
 </body>
+
 </html>
