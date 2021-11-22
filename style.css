@@ -18,5 +18,59 @@
     padding: 0;
 }
 
+body{
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Fraunces', serif;
+}
 
 
+
+
+/*
+header
+*/
+
+.hero-banner{
+    position: relative;
+}
+.img-desktop{
+    display: none;
+    width: 100vw;
+}
+.img-mobile{
+    width: 100vw;
+}
+.hero-text{
+    border: 1px solid red;
+    position: absolute;
+
+    top: 25vh;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+h1{
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    color: var(--White);
+
+    text-align: center;
+    letter-spacing: 0.7rem;
+}
+
+@media screen and (min-width: 1440px)
+{
+    .img-mobile{
+        display: none;
+    }
+    .img-desktop{
+        display: block;
+    }
+}
