@@ -41,7 +41,6 @@ header
     width: 100vw;
 }
 .hero-text{
-    border: 1px solid red;
     position: absolute;
 
     top: 25vh;
