@@ -23,8 +23,87 @@ body{
     font-family: 'Fraunces', serif;
 }
 
+/* 
+NAVBAR
+*/
+.navbar{
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    padding: 2rem 0 2rem 0;
 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.menu-layout{
+    display: none;
+}
+.hide{
+    opacity: 0.5;
+}
+.hamburger{
+    transition: all 0.4s ease;
+}
 
+.menu-mobile{
+    position: absolute;
+    top: 10vh;
+    left: 8vw;
+    width: 84vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.triangle{
+    width: 0;
+    height: 0;
+    border-bottom: 2.5rem solid var(--White);
+    border-left: 2.5rem solid transparent;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: var(--White);
+
+    padding: 3.6rem 0;
+}
+.menu ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+}
+
+.menu li:hover{
+    color: var(--Very-dark-grayish-blue);
+}
+.menu a{
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: var(--Dark-grayish-blue);
+}
+.btn{
+    font-family: 'Fraunces', serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 1.1rem 2.5rem;
+    background-color: var(--Yellow);
+    border-radius: 55rem;
+    cursor: pointer;
+    color: var(--Very-dark-desaturated-blue);
+}
+.btn:hover{
+    color: var(--Very-dark-grayish-blue);
+    background-color: var(--Yellow);
+}
 
 /*
 header
@@ -35,15 +114,15 @@ header
 }
 .img-desktop{
     display: none;
-    width: 100vw;
+    width: 100%;
 }
 .img-mobile{
-    width: 100vw;
+    width: 100%;
 }
 .hero-text{
     position: absolute;
 
-    top: 25vh;
+    top: 25%;
     left: 0;
     width: 100%;
 
@@ -66,10 +145,33 @@ h1{
 
 @media screen and (min-width: 1440px)
 {
+    
     .img-mobile{
         display: none;
     }
     .img-desktop{
         display: block;
+    }
+    /* NAVBAR */
+    .navbar{     
+    padding: 3rem 0 3rem 0;
+    }
+    .logo{
+        width: 15rem;
+    }
+    .menu-layout{
+        display: flex;
+    }
+    .hamburger{
+        display: none;
+    }
+    /*
+    header
+    */
+    .hero-text{
+        gap: 5rem;
+    }
+    h1{
+        font-size: 4rem;
     }
 }
