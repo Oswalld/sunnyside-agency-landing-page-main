@@ -21,12 +21,23 @@
   <!-- NAVBAR START -->
   <nav class="navbar">
     <img src="/images/logo.svg" alt="Logo" class="logo">
-    <div class="menu-layout">
-      MENU HERE
+    <div class="menu-layout menu-mobile">
+      <div class="triangle"></div>
+      <div class="menu">
+        <ul>
+          <li><a href="">About</a></li>
+          <li><a href="">Services</a></li> 
+          <li><a href="">Projects</a></li> 
+          <div class="btn">Contact</div>
+        </ul>
+      </div>
     </div>
     <img src="/images/icon-hamburger.svg" alt="menu" class="hamburger">
   </nav>
   <!-- NAVBAR END -->
+
+
+
 
   <!--HERO BANNER START-->
   <section class="hero-banner">
@@ -43,6 +54,16 @@
   <!--HERO BANNER END-->
 
 
+
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const mobileMenu = document.querySelector('.menu-layout');
+
+    hamburger.addEventListener('click', function(){
+      hamburger.classList.toggle('hide');
+      mobileMenu.classList.toggle('menu-mobile');
+    })
+  </script>
 
 </body>
 
