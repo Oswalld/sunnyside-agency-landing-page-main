@@ -272,4 +272,46 @@ MIDDLE SECTION
     h1{
         font-size: 4rem;
     }
+    /*
+MIDDLE SECTION
+*/
+.middle-section{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.middle-section img{
+    flex: 50%;
+}
+.reverse{
+    flex-direction: row-reverse;
+}
+.text-block{
+    align-items: flex-start;
+    gap: 2rem;
+    
+    flex: 50%;
+
+    padding: 0rem 8rem;
+
+}
+.title{
+    text-align: start;
+    font-size: 2.8rem;
+}
+.description{
+    text-align: start;
+    line-height: 1.8rem;
+}
+.btn-wrapper a{
+    font-size: 1.3rem;
+    padding: 0 1rem;
+}
+.link-decoration{
+    height: 0.7rem;
+    border-radius: 0.5rem;
+}
+
+
 }
