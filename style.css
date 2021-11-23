@@ -237,8 +237,8 @@ CLIENT TESTIMONIALS
     flex-direction: column;
     align-items: center;
     padding: 3rem 0rem;
-    gap: 3rem;
 }
+
 h3{
     font-family: 'Fraunces', serif;
     text-transform: uppercase;
@@ -246,7 +246,6 @@ h3{
     color: var(--Grayish-blue);
     
     letter-spacing: 0.4rem;
-    
 }
 
 .testi-block{
@@ -255,6 +254,7 @@ h3{
     align-items: center;
     gap: 1.6rem;
     padding: 0 2rem;
+    margin-top: 3rem;
 }
 .avatar{
     border-radius: 55rem;
