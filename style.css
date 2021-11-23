@@ -227,6 +227,91 @@ SECOND SECTION
 .text-block-two .description{
     color: var(--Very-dark-desaturated-blue);
 }
+/*
+CLIENT TESTIMONIALS
+*/
+
+
+.testimonial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0rem;
+    gap: 3rem;
+}
+h3{
+    font-family: 'Fraunces', serif;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: var(--Grayish-blue);
+    
+    letter-spacing: 0.4rem;
+    
+}
+
+.testi-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+    padding: 0 2rem;
+}
+.avatar{
+    border-radius: 55rem;
+    width: 4rem;
+}
+.testi-block .description{
+    color: var(--Very-dark-desaturated-blue);
+    line-height: 1.7rem;
+}
+.testi-name{
+    font-family: 'Fraunces', serif;
+}
+.testi-job{
+    color: var(--Dark-grayish-blue);
+    transform: translateY(-1rem);
+}
+/*
+DECORATION FOOTER
+*/
+
+.decoration {
+    display: flex;
+  }
+
+
+/*
+FOOTER
+*/
+
+footer{
+    background-color: var(--Dark-moderate-cyan);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 3rem 0;
+}
+footer ul{
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+footer a{
+    text-decoration: none;
+    color: var(--Dark-blue);
+}
+footer a:hover{
+    color: var(--Soft-red);
+}
+.RS{
+    margin-top: 2rem;
+    display: flex;
+    gap: 2rem;
+}
+
+
 @media screen and (min-width: 1440px)
 {
     
@@ -244,7 +329,7 @@ SECOND SECTION
     padding: 1rem 0 1rem 0;
     }
     .logo{
-        width: 15rem;
+        width: 20rem;
         padding-left: 5vw;
     }
     .menu-layout{
@@ -336,5 +421,51 @@ SECOND SECTION
     }
     .text-block-two .description{
         text-align: center;
+    }
+    /*
+    TESTIMONIAL
+    */
+    .testimonial .flex{
+        display: flex;
+        align-items: center;
+    }
+    .testimonial{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 8rem 6rem;
+        gap: 3rem;
+    }
+    h3{
+        font-size: 1rem;
+    }
+    
+    .testi-block{
+        padding: 0 1rem;
+        width: 33%;
+    }
+    .testi-block .description{
+        text-align: center;
+    }
+    .testi-name{
+        transform: translateY(2rem);
+    }
+    .testi-job{
+        transform: translateY(1rem);
+    }
+    /*
+    DECORATION FOOTER
+    */
+    .decoration-flex{
+        display: flex;
+    }
+    .decoration-flex img{
+        width: 50%;
+    }
+    /*
+    FOOTER
+    */
+    footer ul{
+        gap: 5rem;
     }
 }
