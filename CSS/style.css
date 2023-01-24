@@ -41,6 +41,13 @@ h1 {
   color: hsl(0deg, 0%, 100%);
 }
 
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 56px;
+    line-height: 69.05px;
+    letter-spacing: 8.75px;
+  }
+}
 button {
   position: relative;
   background-color: transparent;
