@@ -214,7 +214,7 @@ header{
     }
 
     .section2-inner-image1{
-        background-image: url(images/mobile/image-graphic-design.jpg);
+        background-image: url("images/mobile/image-graphic-design.jpg");
 
         h3{
             color: $Dark-desaturated-cyan-graphic-design-text;
@@ -224,7 +224,7 @@ header{
         }
     }
     .section2-inner-image2{
-        background-image: url(images/mobile/image-photography.jpg);
+        background-image: url("images/mobile/image-photography.jpg");
 
         h3{
             color: $Dark-blue-photography-text;
@@ -456,7 +456,7 @@ footer{
 
         .section2-container-1{
             height: 100%;
-            background-image: url(images/desktop/image-transform.jpg);
+            background-image: url("images/desktop/image-transform.jpg");
             background-repeat: no-repeat;
             background-position: center;
 
@@ -466,7 +466,7 @@ footer{
         }
         .section2-container-2{
             height: 100%;
-            background-image: url(images/desktop/image-stand-out.jpg);
+            background-image: url("images/desktop/image-stand-out.jpg");
             background-repeat: no-repeat;
             background-position: center;
 
@@ -492,10 +492,10 @@ footer{
         
     
         .section2-inner-image1{
-            background-image: url(images/desktop/image-graphic-design.jpg);
+            background-image: url("images/desktop/image-graphic-design.jpg");
         }
         .section2-inner-image2{
-            background-image: url(images/desktop/image-photography.jpg);
+            background-image: url("images/desktop/image-photography.jpg");
         }
     }
 
