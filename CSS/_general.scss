@@ -1,0 +1,29 @@
+button{
+    position: relative;
+    background-color: transparent;
+    border: none;
+
+    a{
+
+        font-size: 15px;
+        font-family: 'Fraunces', serif;
+        font-weight: 900;
+        line-height: 25px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color:$Very-dark-desaturated-blue;
+    }
+
+    &::after{
+        content: '';
+        position: absolute;
+        left: -8px;
+        right: -8px;
+        bottom: 0px;
+        height: 10px;
+        background-color: $Soft-red;
+        border-radius: 28px;
+        z-index: -1;
+    }
+
+}
